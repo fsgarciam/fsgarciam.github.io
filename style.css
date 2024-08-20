@@ -1,16 +1,20 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
     color: #333;
 }
 
 header {
-    background: #333;
+    background: #1e1e1e;
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
@@ -25,16 +29,33 @@ header p {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 20px 0 0 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 1.1em;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #1da1f2;
 }
 
 .container {
@@ -43,30 +64,51 @@ nav ul li a {
 }
 
 section {
-    padding: 20px 0;
+    padding: 60px 0;
     text-align: center;
 }
 
 #about p {
-    font-size: 1.1em;
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.profile-img {
+    border-radius: 50%;
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
 }
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
 .project {
     background: #fff;
     padding: 20px;
-    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 footer {
-    background: #333;
+    background: #1e1e1e;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
 }
