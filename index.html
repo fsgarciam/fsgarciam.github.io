@@ -1,91 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabrizio Garcia | Data Scientist</title>
+    <title>Fabrizio Garcia | Data Scientist Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
+
 <body>
     <header>
-        <nav>
-            <div class="container">
-                <h1>Fabrizio Garcia</h1>
+        <div class="container">
+            <h1>Fabrizio Garcia</h1>
+            <p>Data Scientist | Mining Industry Expert | AI Enthusiast</p>
+            <nav>
                 <ul>
-                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#timeline">Timeline</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <section id="about">
+    <section id="about" data-aos="fade-up">
         <div class="container">
             <h2>About Me</h2>
-            <p>I am a Master's student in Engineering Sciences with a focus on Mining and Data Science, specializing in machine learning, risk-based inspection, and AI in mining.</p>
-            <div class="icons">
-                <a href="https://www.linkedin.com/in/fabriziogarciam/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/your-github-username" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
+            <p>I am a Master's student specializing in data science with a strong focus on the mining industry. My work involves machine learning, risk-based inspections, and the application of AI to improve mining processes.</p>
+            <img src="assets/profile.jpg" alt="Fabrizio Garcia" class="profile-img">
         </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" data-aos="fade-up">
         <div class="container">
             <h2>Projects</h2>
-            <div class="slider">
-                <div class="slide" style="background-image: url('assets/project1.jpg');">
-                    <h3>Project One</h3>
-                    <p>Brief description of the project. Click to learn more.</p>
+            <div class="project-grid">
+                <div class="project" data-aos="zoom-in">
+                    <h3>Predictive Maintenance Model</h3>
+                    <p>Developed a machine learning model to predict equipment failures in mining trucks, reducing downtime by 20%.</p>
                 </div>
-                <div class="slide" style="background-image: url('assets/project2.jpg');">
-                    <h3>Project Two</h3>
-                    <p>Brief description of the project. Click to learn more.</p>
+                <div class="project" data-aos="zoom-in">
+                    <h3>Risk-Based Inspection Tool</h3>
+                    <p>Designed an RBI tool for open-pit mining operations, optimizing inspection schedules and enhancing safety.</p>
                 </div>
-                <div class="slide" style="background-image: url('assets/project3.jpg');">
-                    <h3>Project Three</h3>
-                    <p>Brief description of the project. Click to learn more.</p>
+                <div class="project" data-aos="zoom-in">
+                    <h3>Data Visualization Dashboard</h3>
+                    <p>Created a PowerBI dashboard to visualize key performance indicators for mining operations, improving decision-making processes.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="timeline">
-        <div class="container">
-            <h2>Timeline</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>2024</h3>
-                        <p>Completed my Master's degree in Engineering Sciences with a specialization in Mining.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>2023</h3>
-                        <p>Published research on AI applications in mining.</p>
-                    </div>
-                </div>
-                <!-- Add more timeline items as needed -->
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
+    <section id="contact" data-aos="fade-up">
         <div class="container">
             <h2>Contact</h2>
-            <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-                <label for="message">Message</label>
-                <textarea id="message" name="message"></textarea>
-                <button type="submit">Send</button>
-            </form>
+            <p>If you would like to collaborate or learn more about my work, feel free to reach out via email or connect with me on social media.</p>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
         </div>
     </section>
 
@@ -95,6 +72,10 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
